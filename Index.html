@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌟 CareerHub - Job Board</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 CareerHub Job Board</h1>
+    <p class="tagline">Find your dream job — fast, easy & inspiring ✨</p>
+    <input type="text" id="searchBox" placeholder="🔍 Search by title, company, or skill..." />
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="developer">Developer</button>
+      <button class="filter-btn" data-category="design">Design</button>
+      <button class="filter-btn" data-category="marketing">Marketing</button>
+      <button class="filter-btn" data-category="data">Data</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="jobList" class="job-list"></div>
+  </main>
+
+  <!-- Apply Modal -->
+  <div id="applyModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Apply for this Job</h2>
+      <input type="text" id="applicantName" placeholder="Your Full Name" />
+      <input type="email" id="applicantEmail" placeholder="Your Email Address" />
+      <textarea id="applicantMessage" placeholder="Why are you a good fit?" rows="4"></textarea>
+      <button id="submitApplication">Submit Application ✅</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>💼 Made by thakur Ramkumar rajput | © 2025 CareerHub</p>
+  </footer>
+
+  <script src="Index.js"></script>
+</body>
+</html>
